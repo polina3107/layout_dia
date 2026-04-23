@@ -1,7 +1,8 @@
-@import 'utils';
+@import 'utils/vars';
+@import 'utils/mixins';
 @import 'fonts';
-@import 'typography';
+@import 'blocks';
 
 body {
-  background: $c-gray;
+  
 }
