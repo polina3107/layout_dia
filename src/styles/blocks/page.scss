@@ -1,0 +1,32 @@
+.page {
+  scroll-behavior: smooth;
+  margin: 0;
+  font-family: inherit;
+
+  &__body {
+    min-width: 320px;
+    margin: 0;
+  }
+
+  &__menu {
+    pointer-events: none;
+
+    position: fixed;
+    right: 0;
+    transform: translateX(-100%);
+
+    opacity: 0;
+
+    transition: all $transition-time;
+
+    &:target {
+      pointer-events: all;
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+}

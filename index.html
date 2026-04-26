@@ -6,39 +6,41 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <title>Air</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <div class="header__content">
-        <a href="#" class="header__logo">
-          <img src="src/images/logo/dia-logo.svg" alt="Air logo">
-        </a>
-
-        <div class="dropdown">
-          <button class="dropdown__trigger"><img src="src/images/menu.svg" alt="Menu button"></button>
-
-          <div class="dropdown">
-            <ul class="dropdown__content">
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#about-us">About us</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#services">Services</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#testimonials">Testimonials</a>
-              </li>
-              <li class="dropdown__item">
-                <a class="dropdown__link" href="#contact-us">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+        <div class="header__top">
+          <a href="#" class="header__logo">
+            <img src="src/images/logo/logo.svg" alt="Air logo">
+          </a>
+          <a href="#menu" class="header__menu">
+            <img src="src/images/menu.svg" alt="Menu link">
+          </a>
         </div>
+
+        <aside class="page__menu menu" id="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#about-us">About us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#services">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact-us">Contact Us</a>
+            </li>
+          </ul>
+        </aside>
+
 
         <nav class="nav">
           <ul class="nav__list">
@@ -58,16 +60,17 @@
         </nav>
 
         <a class="header__link nav__link" href="#">Hire us</a>
-
-        <h1 class="header__title">Strategic Agency</h1>
-        <p class="header__text">
-          We believe in the power of bold ideas that can solve business challenges.
-        </p>
-
-        <button class="button header__button">
-          Learn more
-        </button>
       </div>
+
+      <h1 class="header__title">Strategic Agency</h1>
+      <p class="header__text">
+        We believe in the power of bold ideas that can solve business challenges.
+      </p>
+
+      <button class="button header__button">
+        Learn more
+      </button>
+
 
       <div class="slider">
         <button class="slider__arrow">
@@ -128,10 +131,10 @@
 
     <footer class="footer">
       <a href="#" class="header__logo">
-        <img src="src/images/logo/dia-logo.svg" alt="Air logo">
+        <img src="src/images/logo/logo.svg" alt="Air logo">
       </a>
       <ul>
-        
+
       </ul>
     </footer>
   </body>
