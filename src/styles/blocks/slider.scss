@@ -15,15 +15,16 @@
   }
 
   @include on-small-desktop {
-    margin: 0;
     top: 0;
-    align-self: end;
-
     grid-column: 7 / -1;
     grid-row: 2 / 5;
+
+    margin: 0;
+    align-self: end;
+
     height: 680px;
-    border-bottom-left-radius: 0;
     border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   @include on-large-screens {
@@ -48,16 +49,18 @@
 
     @include on-small-desktop {
       display: flex;
-      padding-top: 564px;
       align-items: center;
-      justify-content: center;
+
+      padding-top: 564px;
+
       gap: 24px;
+      justify-content: center;
     }
 
     @include on-desktop {
       justify-content: flex-start;
-      padding-inline: 0;
       padding-left: 48px;
+      padding-inline: 0;
     }
 
     @include on-large-screens {
@@ -100,9 +103,5 @@
   &__arrows {
     display: flex;
     gap: 16px;
-  }
-
-  &__text-container {
-
   }
 }

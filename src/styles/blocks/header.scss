@@ -1,12 +1,12 @@
 .header {
   display: grid;
-
   background-color: $header-footer-color;
 
   @include on-small-desktop {
     @include page-grid;
-    border-bottom-left-radius: 30px;
+
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 
   &__content {
@@ -17,8 +17,8 @@
     margin-top: 20px;
 
     @include on-small-desktop {
-      margin-top: 52px;
       grid-column: 1 / -1;
+      margin-top: 52px;
     }
   }
 
@@ -74,7 +74,6 @@
 
     @include on-tablet {
       margin-top: 56px;
-
       font-size: 64px;
       line-height: 68px;
       letter-spacing: -2px;
@@ -105,7 +104,6 @@
 
     @include on-tablet {
       margin-top: 24px;
-
       font-size: 18px;
     }
 
@@ -138,6 +136,7 @@
 
     &__container {
       @include content-padding-inline;
+
       margin-top: 72px;
 
       @include on-tablet {
