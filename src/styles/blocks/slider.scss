@@ -16,11 +16,12 @@
 
   @include on-small-desktop {
     top: 0;
+
     grid-column: 7 / -1;
     grid-row: 2 / 5;
 
-    margin: 0;
     align-self: end;
+    margin: 0;
 
     height: 680px;
     border-top-right-radius: 0;
@@ -50,10 +51,10 @@
     @include on-small-desktop {
       display: flex;
       align-items: center;
+      gap: 24px;
 
       padding-top: 564px;
 
-      gap: 24px;
       justify-content: center;
     }
 
