@@ -19,11 +19,10 @@
 
     grid-column: 7 / -1;
     grid-row: 2 / 5;
-
     align-self: end;
-    margin: 0;
 
     height: 680px;
+    margin: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -50,12 +49,11 @@
 
     @include on-small-desktop {
       display: flex;
-      align-items: center;
       gap: 24px;
+      align-items: center;
+      justify-content: center;
 
       padding-top: 564px;
-
-      justify-content: center;
     }
 
     @include on-desktop {
