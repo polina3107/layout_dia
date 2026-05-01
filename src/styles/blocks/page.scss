@@ -2,6 +2,7 @@
   scroll-behavior: smooth;
   margin: 0;
   font-family: Poppins, sans-serif;
+  background-color: $page-color;
 
   &__body {
     min-width: 320px;
@@ -21,6 +22,7 @@
 
     &:target {
       pointer-events: all;
+      top: 0;
       transform: translateX(0);
       opacity: 1;
     }

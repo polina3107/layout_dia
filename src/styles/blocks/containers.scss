@@ -1,0 +1,37 @@
+.containers {
+  &__container {
+    @include content-padding-inline;
+
+    &:last-child {
+      padding-bottom: 72px;
+    }
+  }
+
+  &__image {
+    width: 166px;
+    height: 166px;
+    margin-top: 56px;
+    border-radius: 16px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-top: 32px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    color: $titles-text-color;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 16px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: $description-text-color;
+  }
+}

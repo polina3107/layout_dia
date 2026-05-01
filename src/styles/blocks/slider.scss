@@ -28,13 +28,8 @@
   }
 
   @include on-large-screens {
-    // max-width: 2560px;
-    // grid-column: 4 ;
-    // grid-row: 3 / 5;
-    // margin-right: 140px;
-    // right: 300px;
-    // width: 1167px;
-    // right: 550px;
+    right: 0;
+    bottom: 0;
   }
 
   &__content {
@@ -59,11 +54,6 @@
     @include on-desktop {
       justify-content: flex-start;
       padding-left: 48px;
-      padding-inline: 0;
-    }
-
-    @include on-large-screens {
-      // padding: 0;
     }
   }
 
@@ -83,7 +73,7 @@
     margin: 0;
     margin-top: 8px;
 
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
@@ -97,6 +87,13 @@
     border-radius: 50%;
 
     background-color: #fff;
+
+    transition: all $transition-time;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 
   &__arrows {
