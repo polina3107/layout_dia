@@ -1,7 +1,5 @@
 .containers {
   &__container {
-    @include content-padding-inline;
-
     &:last-child {
       padding-bottom: 72px;
     }
@@ -27,6 +25,19 @@
   &__text {
     margin: 0;
     margin-top: 16px;
+    padding-inline: 20px;
+
+    @include on-tablet {
+      padding-inline: 139px;
+    }
+
+    @include on-small-desktop {
+      padding-inline: 54px;
+    }
+
+    @include on-desktop {
+      padding-inline: 150px;
+    }
 
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
