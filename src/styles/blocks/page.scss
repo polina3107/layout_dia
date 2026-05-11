@@ -1,5 +1,4 @@
 .page {
-  scroll-behavior: smooth;
   margin: 0;
   font-family: Poppins, sans-serif;
   background-color: $page-color;
@@ -31,4 +30,8 @@
   &:has(.page__menu:target) {
     overflow: hidden;
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }

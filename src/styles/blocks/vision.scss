@@ -55,6 +55,13 @@
 
     background-color: $buttons-color;
 
+    transition: all $transition-time;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+    }
+
     @include on-tablet {
       width: 50%;
       margin-top: 64px;

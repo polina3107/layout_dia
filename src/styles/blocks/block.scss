@@ -27,9 +27,18 @@
   }
 
   &__links {
+    transform-origin: left;
+
     display: flex;
     gap: 16px;
+
     margin-top: 32px;
+
+    transition: all $transition-time;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__link {

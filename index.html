@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+    <link rel="icon" href="src/images/logo/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -62,7 +63,7 @@
           </ul>
         </nav>
 
-        <a class="header__link nav__link" href="#">Hire us</a>
+        <a class="header__link nav__link" href="#contact-us">Hire us</a>
       </div>
 
       <h1 class="header__title">Strategic Agency</h1>
@@ -71,9 +72,11 @@
       </p>
 
       <div class="header__button__container">
-        <button class="button header__button">
-          Learn more
-        </button>
+        <a href="#about-us">
+          <button class="button header__button">
+            Learn more
+          </button>
+        </a>
       </div>
 
 
@@ -149,13 +152,13 @@
             <p class="block__number">001</p>
             <p class="block__description">Brand Development <br> Copywriting <br> Logo & Webite Design <br> Packaging</p>
             <div class="block__links">
-              <a href="#">
+              <a href="#about-us">
                 <img
                 src="src/images/block-arrow.svg"
                 alt="Service 1"
                 class="block__arrow"
                 >
-                <a href="#" class="block__link">
+                <a href="#about-us" class="block__link">
                   <p>Learn more</p>
                 </a>
               </a>
@@ -165,13 +168,13 @@
             <p class="block__number">002</p>
             <p class="block__description">Сontent Production <br> Graphic Design <br> Video Production <br> Post Production</p>
             <div class="block__links">
-              <a href="#">
+              <a href="#about-us">
                 <img
                 src="src/images/block-arrow.svg"
                 alt="Service 2"
                 class="block__arrow"
                 >
-                <a href="#" class="block__link">
+                <a href="#about-us" class="block__link">
                   <p>Learn more</p>
                 </a>
               </a>
@@ -181,13 +184,13 @@
             <p class="block__number">003</p>
             <p class="block__description">Marketing Strategy <br> Email Marketing <br> Paid Advertising <br> Blog Content & SEO</p>
             <div class="block__links">
-              <a href="#">
+              <a href="#about-us">
                 <img
                 src="src/images/block-arrow.svg"
                 alt="Service 3"
                 class="block__arrow"
                 >
-                <a href="#" class="block__link">
+                <a href="#about-us" class="block__link">
                   <p>Learn more</p>
                 </a>
               </a>
@@ -197,13 +200,13 @@
             <p class="block__number">004</p>
             <p class="block__description">Digital Communications <br> Influencer Marketing <br> Product Placements <br> Strategic Partnerships</p>
             <div class="block__links">
-              <a href="#">
+              <a href="#about-us">
                 <img
                 src="src/images/block-arrow.svg"
                 alt="Service 4"
                 class="block__arrow"
                 >
-                <a href="#" class="block__link">
+                <a href="#about-us" class="block__link">
                   <p>Learn more</p>
                 </a>
               </a>
@@ -271,47 +274,124 @@
             </div>
           </div>
         </div>
-
-        <div class="testimonials__apply">
-
-        </div>
       </section>
       <section class="vision">
         <h1 class="vision__title">Vision, Passion, Results</h1>
         <p class="vision__description">We are sure that first-rate job is possible only if all three components are united.</p>
-        <button class="button vision__button">
-          Apply
-        </button>
+        <a href="#contact-us" class="vision__link">
+          <button class="button vision__button">
+            Apply
+          </button>
+        </a>
       </section>
       <section class="contact-us" id="contact-us">
-        <form class="form">
-          <div class="form__inputs">
-            <h2 class="form__inputs__title">Send us a message</h2>
-            <input type="text" class="form__input">
-            <input type="text" class="form__input">
-            <input type="text" class="form__input">
-            <br>
-            <button class="button form__button">Send</button>
+        <div class="contact-us__form">
+          <form class="form" onsubmit="this.reset(); return false;">
+            <h2 class="form__title">Send us a message</h2>
+            <div class="form__inputs">
+              <input
+              type="email"
+              class="form__input"
+              placeholder="Your email"
+              required
+              name="email"
+              >
+              <input
+              type="text"
+              class="form__input"
+              placeholder="Your name"
+              required
+              name="name"
+              >
+              <textarea
+              class="form__input form__textarea"
+              placeholder="Your message"
+              name="message"
+              ></textarea>
+            </div>
+            <button class="form__button" type="submit">Send</button>
+          </form>
+        </div>
+
+        <div class="contact-us__contacts">
+          <h2 class="contacts__title">Contact us</h2>
+          <div class="contacts__wrapper">
+            <div class="contacts__contact">
+              <h3 class="contacts__name">Call us</h3>
+              <a class="contacts__text" href="tel:+654 321 987"><p class="contacts__text__link">654 321 987</p></a>
+            </div>
+            <div class="contacts__contact">
+              <h3 class="contacts__name">Visit us</h3>
+              <a
+              class="contacts__text"
+              href="https://maps.app.goo.gl/9opHJFswjqPUKtjN7"
+              target="_blank"
+              ><p class="contacts__text__link">2905 West Drive, Buffalo Grove</p></a>
+            </div>
+            <div class="contacts__contact">
+              <h3 class="contacts__name">our socials</h3>
+              <div class="contacts__icons">
+                <a
+                href="https://www.facebook.com/"
+                class="contacts__link"
+                target="_blank"
+                >
+                  <img src="src/images/icons/facebook.svg"
+                  alt="facebook icon"
+                  class="contacts__icon"
+                  >
+                </a>
+                <a
+                href="https://x.com/"
+                class="contacts__link"
+                target="_blank"
+                >
+                  <img src="src/images/icons/twitter.svg"
+                  alt="twitter icon"
+                  class="contacts__icon"
+                  >
+                </a>
+                <a
+                href="https://www.instagram.com/"
+                class="contacts__link"
+                target="_blank"
+                >
+                  <img src="src/images/icons/instagram.svg"
+                  alt="instagram icon"
+                  class="contacts__icon"
+                  >
+                </a>
+              </div>
+            </div>
           </div>
-
-          <div class="form__address">
-            <h2 class="form__address__title">Contact us</h2>
-          </div>
-        </form>
-
-        <div class="contact-us__content">
-          <h2 class="contact-us__title"></h2>
-
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="#" class="header__logo">
-        <img src="src/images/logo/logo.svg" alt="Air logo">
+      <a href="#" class="footer__logo">
+        <img
+        src="src/images/logo/logo.svg"
+        alt="Air logo"
+        class="footer__image"
+        >
       </a>
-      <ul>
-
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#about-us">About us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Home</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#services">Services</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#contact-us">Contact Us</a>
+        </li>
       </ul>
     </footer>
   </body>

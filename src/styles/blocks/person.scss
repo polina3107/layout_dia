@@ -3,6 +3,11 @@
     width: 196px;
     max-width: 100%;
     margin-top: 32px;
+    transition: all $transition-time;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__quotes {
