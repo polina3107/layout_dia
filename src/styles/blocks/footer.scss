@@ -9,6 +9,7 @@
   @include on-small-desktop {
     @include page-grid;
 
+    margin-top: -2px;
     padding-top: 125px;
   }
 
