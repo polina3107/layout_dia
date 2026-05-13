@@ -71,7 +71,7 @@
     &:-webkit-autofill:focus {
       caret-color: #fff;
       transition: background-color 5000s ease-in-out 0s;
-      
+
       -webkit-text-fill-color: #fff;
     }
   }
@@ -109,6 +109,9 @@
   }
 
   &__textarea {
+    resize: vertical;
     height: 23px;
+    min-height: 23px;
+    max-height: 46px;
   }
 }
