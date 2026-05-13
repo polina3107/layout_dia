@@ -14,8 +14,8 @@
     transition: all $transition-time;
 
     &:hover {
-      transform: scale(1.2);
       cursor: pointer;
+      transform: scale(1.2);
     }
   }
 
